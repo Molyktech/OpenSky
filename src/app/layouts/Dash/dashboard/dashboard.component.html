@@ -1,7 +1,6 @@
 <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="32px" fxLayoutAlign="flex-start">
   <ng-container *ngFor="let country of topTenStates">
-    <mat-card fxFlex="0 1 calc(33.3% - 32px)" fxFlex.lt-md="0 1 calc(50% - 32px)" fxFlex.lt-sm="100%"
-      (click)="openDialog()">
+    <mat-card fxFlex="0 1 calc(33.3% - 32px)" fxFlex.lt-md="0 1 calc(50% - 32px)" fxFlex.lt-sm="100%">
       <mat-card-title>
         <mat-icon aria-hidden="false" aria-label="Example flight icon">flight</mat-icon>
       </mat-card-title>
@@ -9,5 +8,6 @@
         {{country}}
       </mat-card-content>
     </mat-card>
+
   </ng-container>
 </div>

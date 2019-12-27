@@ -60,8 +60,8 @@ export class DashboardComponent implements OnInit {
   openDialog(): void {
     const dialogRef = this.dialog.open(DialogModalComponent, {
       width: "250px",
-      backdropClass: "custom-dialog-backdrop-class",
-      panelClass: "custom-dialog-panel-class",
+      
+    
       data: { pageValue: this.sendValue }
     });
 
@@ -71,3 +71,9 @@ export class DashboardComponent implements OnInit {
     });
   }
 }
+
+// to get all flights at the current time of click, an api call has to be made wih time parameter
+// icao address is located at index 0
+// departing flights is vertical rates with positive index
+// arriving flights is vertical rates with negaive index
+//
